@@ -32,7 +32,8 @@ async def whos_out(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"Everyone is in today! ({today})")
 
 if __name__ == '__main__':
-    app = ApplicationBuilder().token("YOUR_API_TOKEN_HERE").build()
+    app = ApplicationBuilder().token("8687977886:AAGf59yQNV4yRoxbgUyNISvdQi6xns4QHnU
+").build()
     app.add_handler(CommandHandler("whosout", whos_out))
     print("Bot is running...")
     app.run_polling()
